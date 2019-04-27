@@ -10,6 +10,7 @@ formatting throughout your app by using annotations in your string resources.
 * [Cascading Registry](#cascading-registry)
 * [Format Strings](#format-strings)
 * [Downloadable Fonts](#downloadable-fonts)
+* [View Subclasses](#view-subclasses)
 * [Java Interoperability](#java-interoperability)
 * [Internals](#internals)
 
@@ -384,6 +385,14 @@ The attribute names match those of the second argument to the registerFonts() me
 It is worth noting that since V1.2.0 Rialto is case insensitive, so using a font name of “Pacifico” is identical to using “pacifico”.
 
 There’s really nothing more to this – registering your preloaded_fonts array using FontRegistrar does all that you need, and you just need to use the appropriate annotations within your string resources to make use of them.
+
+#### View Subclasses
+
+Using Rialto with View (EditText, TextInputEditText or TextView) subclasses is simple, but requires one additional simple step:
+
+Extend your subclass from the according `Rialto*` View instead of the support/material/appcompat class, e.g. use `RialtoTextView` as your `MyTextView` superclass instead of `TextView`.
+
+This will enable all Rialto features in your subclass as well.
 
 #### Java Interoperability
 
