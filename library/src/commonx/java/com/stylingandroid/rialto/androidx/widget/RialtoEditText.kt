@@ -8,7 +8,7 @@ import androidx.appcompat.widget.AppCompatEditText
 import com.stylingandroid.rialto.RialtoTextDelegate
 import com.stylingandroid.rialto.TextViewDelegate
 
-class RialtoEditText @JvmOverloads constructor(
+open class RialtoEditText @JvmOverloads constructor(
     context: Context,
     private val attrs: AttributeSet? = null,
     defaultStyle: Int = R.attr.editTextStyle

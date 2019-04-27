@@ -8,7 +8,7 @@ import com.stylingandroid.rialto.RialtoTextDelegate
 import com.stylingandroid.rialto.TextViewDelegate
 import kotlinx.coroutines.CoroutineScope
 
-class RialtoTextInputEditText @JvmOverloads constructor(
+open class RialtoTextInputEditText @JvmOverloads constructor(
         context: Context,
         private val attrs: AttributeSet? = null,
         defaultStyle: Int = 0

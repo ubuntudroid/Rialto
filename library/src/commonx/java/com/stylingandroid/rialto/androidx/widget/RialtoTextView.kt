@@ -6,7 +6,7 @@ import android.widget.TextView
 import androidx.appcompat.widget.AppCompatTextView
 import com.stylingandroid.rialto.TextViewDelegate
 
-class RialtoTextView @JvmOverloads constructor(
+open class RialtoTextView @JvmOverloads constructor(
     context: Context,
     private val attrs: AttributeSet? = null,
     defaultStyle: Int = 0
